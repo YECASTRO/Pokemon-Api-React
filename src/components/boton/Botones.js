@@ -1,9 +1,9 @@
 import React from 'react'
-import { CardPokemon } from './CardPokemon'
+import { BotonInfo } from './BotonInfo'
 
 
-import './Cards.css'
-export const Cards = ({ results, infoPokemon }) => {
+
+export const Botones = ({ results, infoPokemon }) => {
 
     return (
         <div className="container">
@@ -15,7 +15,7 @@ export const Cards = ({ results, infoPokemon }) => {
                             <div className="col-md-8">
                                 <div  key={p.id} onClick={() => infoPokemon(p)}>
                                     <li className="card-item" key={p.name}>
-                                        <CardPokemon url={p.url} />
+                                        <BotonInfo url={p.url} />
                                     </li>
                                 </div>
                             </div>

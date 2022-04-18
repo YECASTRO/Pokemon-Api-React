@@ -16,7 +16,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to='/' exact activeClassName='active'>Inicio</Link>{" "}
+                                <Link className="nav-link" to='/'>Inicio</Link>{" "}
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/pokemon'>Pokemon</Link>
