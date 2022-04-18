@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Navbar = () => {
     const mostrarAlerta=()=>{
-        alert("Para ver la información debes registrarte")
+        alert("Para ver la información correctamente debe registrarse")
     }
     return (
         <div>
