@@ -13,9 +13,10 @@ export const CardPokemon = ({ url }) => {
                     <span className="visually-hidden">Loading...</span>
                 </div>
             ) : (
-                <div className="row">
-                    <div className="card text-center">
-                        <div className="card-body">
+               
+                    <div className="card-container">
+                    <div className="card">
+                        
                             <h5 className="card-title">{data.id}</h5>
                             <h5 className="card-title">{data.forms[0].name}</h5>
 
@@ -24,9 +25,10 @@ export const CardPokemon = ({ url }) => {
                             <img src={data.sprites.front_default} alt="pokemon" />
 
                             <Link to={`/pokeinfo/${data.id}`}>See more</Link>
-                        </div>
+                       
                     </div>
-                </div>
+                    </div>
+             
             )}
         </div>
     );

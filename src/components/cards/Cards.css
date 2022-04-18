@@ -8,25 +8,23 @@
 .card
 {
     background-color: var( --color );
-    color: rgb(7, 6, 6);
-    box-shadow: 0 0 10px 0 var( --color );
-    border-radius: 2rem;
+    color: rgb(9, 8, 8);
+    box-shadow: 0 0 20px 0 var( --color );
+    border-radius: 3rem;
     overflow: hidden;
     height: 100%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 3rem 3rem;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     will-change: box-shadow, transform;
     transition: .3s all;
-
 }
 
 .card .card-title
 {
     align-self: flex-start;
-   
 }
 
 .card .card-title h2
