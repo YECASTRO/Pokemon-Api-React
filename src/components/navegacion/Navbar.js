@@ -21,9 +21,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/pokemon'>Pokemon</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/pokeinfo'>Pokemon Info</Link>
-                            </li>
+                            
                             <li><LoginButton/></li>
                         </ul>
                     </div>

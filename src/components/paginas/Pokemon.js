@@ -36,7 +36,7 @@ const Pokemon = () => {
                                 </div>
                             </div>
                     
-                            <CardInfo pokemon={pokeDex} />
+                            <CardInfo data={pokeDex} />
                             
                             
                             

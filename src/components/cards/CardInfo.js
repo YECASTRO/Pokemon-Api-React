@@ -1,9 +1,9 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 
-export const CardInfo = ({ pokemon }) => {
+export const CardInfo = ({ data }) => {
 
-    console.log(pokemon)
+    console.log(data)
     const { isAuthenticated, isLoading } = useAuth0();
 
     
@@ -22,10 +22,10 @@ export const CardInfo = ({ pokemon }) => {
         isAuthenticated && (
             <div>
                 {
-                    (!pokemon) ? "" : (
+                    (!data) ? "" : (
                         <div>
-                        <h5 >{pokemon.id}</h5>
-                            <h1>Nombre: {pokemon.name}</h1>
+                       
+                            <h1>Nombre: {data.name}</h1>
                            
                         </div>
 
