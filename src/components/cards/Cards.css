@@ -12,6 +12,12 @@
     align-items: center;
 }
 
+.modal
+{
+    text-transform: capitalize;
+    justify-content: center;
+    border-radius: 3rem;
+}
 .card img
 {
     text-transform: capitalize;

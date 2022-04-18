@@ -4,7 +4,9 @@ import { LoginButton } from '../login/LoginButton'
 import axios from 'axios'
 
 const Navbar = () => {
-    
+    const mostrarAlerta=()=>{
+        alert("Para ver la información debes registrarte")
+    }
     return (
         <div>
 
@@ -20,7 +22,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/'>Inicio</Link>{" "}
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={() =>mostrarAlerta()}>
                                 <Link className="nav-link" to='/pokemon'>Pokemon</Link>
                             </li>
                             

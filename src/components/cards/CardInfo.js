@@ -14,8 +14,8 @@ export const CardInfo = ({ data }) => {
         <div class="spinner-grow text-warning" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-
       </div>
+
     )
   }
     return (
@@ -33,6 +33,7 @@ export const CardInfo = ({ data }) => {
                 }
             </div>
         )
+        
     )
 }
 

@@ -20,7 +20,7 @@ const Profile = () => {
 
   return (
     isAuthenticated && (<center>
-      <div className="card text-dark bg-light mb-3" >
+      <div className="card  text-dark bg-light mb-3" >
     <img className="card img" src={user.picture} alt={user.name}/>
     <div className="card-body">
       <h5 className="card-title">{user.name}</h5>

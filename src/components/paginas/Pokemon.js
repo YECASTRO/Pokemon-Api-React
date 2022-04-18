@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UseFetch } from "../UseFetch";
 import { Cards } from "../cards/Cards";
-import { Botones } from "../boton/Botones";
+
 import { CardInfo } from "../cards/CardInfo";
 
 const Pokemon = () => {
@@ -42,9 +42,7 @@ const Pokemon = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="col-md-6">
-                        <CardInfo pokemon={pokeDex} />
-                    </div>
+                    
                 </div>
             )}
         </div>
