@@ -1,6 +1,8 @@
 import React from "react";
 import { UseFetch } from "../UseFetch";
 
+import  Modal from './Modal';
+
 export const CardPokemon = ({ url }) => {
     const estado = UseFetch(url);
     const { cargando, data } = estado;
@@ -13,17 +15,20 @@ export const CardPokemon = ({ url }) => {
                 </div>
             ) : (
                 <div className="row">
-                    <div className="card text-center">
+                    <div className="card " data-bs-toggle="modal" data-bs-target={`#id${data.id}`}>
                         <div className="card-body">
-                            <h5>#0 {data.id}</h5>
+                            <h5>#0{data.id}</h5>
                             <h5>Nombre: {data.forms[0].name}</h5>
 
-                            <h5>Habilidades: {data.abilities[0].ability.name}</h5>
-                            <img src={data.sprites.front_default} alt="pokemon" />
                         </div>
                     </div>
+                    <Modal id={`id${data.id}`} titulo={data.forms[0].name} contenido={data.abilities[0].ability.name} imagen={data.sprites.front_default}/>
                 </div>
+
             )}
         </div>
     );
 };
+
+
+
