@@ -26,7 +26,7 @@ const Pokemon = () => {
                       </div>
                         :
                         <div className="row">
-                            <div className="col-md-8">
+                            <div className="col-md-12">
                                 <Cards results={data.results} infoPokemon={poke=>setPokeDex(poke)} />
                                
                                 <div className='container m-auto text-center'>
@@ -36,7 +36,7 @@ const Pokemon = () => {
                                 </div>
                             </div>
                     
-                            <CardInfo data={pokeDex} />
+                            <CardInfo pokemon={pokeDex} />
                             
                             
                             
